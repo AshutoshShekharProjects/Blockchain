@@ -1,0 +1,27 @@
+{
+  "contracts": {
+    "Lottery": "a8a28933662bee68c55256032acc4292c6be8ebc",
+    "MockV3Aggregator": "a56c12bb84fb2574b7ce665d0bda2f3072622904",
+    "VRFCoordinatorV2_5Mock": "967f6bb73633783caaa26db24bb3d45a5ddc7372",
+    "smartcontractkit/chainlink@2.13.0/ConfirmedOwner": "65f60dd7e485c828e86b46a748752d501ab35e0d",
+    "smartcontractkit/chainlink@2.13.0/ConfirmedOwnerWithProposal": "4455d69ae6b42b00b79a9915da05f9eab63e3771",
+    "smartcontractkit/chainlink@2.13.0/VRFV2PlusClient": "6f875485bd4d5695d5d179425c1fd1a51bb832ae"
+  },
+  "tests": {
+    "tests/test_lottery_integration.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "F",
+      "sha1": "abf32348cee2879db0c9285c509859f0e8193e80",
+      "txhash": []
+    },
+    "tests/test_lottery_unit.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "sssss",
+      "sha1": "cced07331438fdcca40833f2ef3f310c7f25f3a4",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}

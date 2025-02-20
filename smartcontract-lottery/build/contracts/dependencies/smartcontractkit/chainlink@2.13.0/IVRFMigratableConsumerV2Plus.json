@@ -1,0 +1,235 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "vrfCoordinator",
+          "type": "address"
+        }
+      ],
+      "name": "CoordinatorSet",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "vrfCoordinator",
+          "type": "address"
+        }
+      ],
+      "name": "setCoordinator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "6": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus.sol"
+  },
+  "ast": {
+    "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus.sol",
+    "exportedSymbols": {
+      "IVRFMigratableConsumerV2Plus": [
+        584
+      ]
+    },
+    "id": 585,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 572,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVRFMigratableConsumerV2Plus",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 573,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:211:6",
+          "text": "@notice The IVRFMigratableConsumerV2Plus interface defines the\n @notice method required to be implemented by all V2Plus consumers.\n @dev This interface is designed to be used in VRFConsumerBaseV2Plus."
+        },
+        "fullyImplemented": false,
+        "id": 584,
+        "linearizedBaseContracts": [
+          584
+        ],
+        "name": "IVRFMigratableConsumerV2Plus",
+        "nameLocation": "278:28:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "eventSelector": "d1a6a14209a385a964d036e404cb5cfb71f4000cdb03c9366292430787261be6",
+            "id": 577,
+            "name": "CoordinatorSet",
+            "nameLocation": "317:14:6",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 576,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 575,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "vrfCoordinator",
+                  "nameLocation": "340:14:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 577,
+                  "src": "332:22:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 574,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "332:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "331:24:6"
+            },
+            "src": "311:45:6"
+          },
+          {
+            "documentation": {
+              "id": 578,
+              "nodeType": "StructuredDocumentation",
+              "src": "360:131:6",
+              "text": "@notice Sets the VRF Coordinator address\n @notice This method should only be callable by the coordinator or contract owner"
+            },
+            "functionSelector": "8ea98117",
+            "id": 583,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setCoordinator",
+            "nameLocation": "503:14:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 581,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 580,
+                  "mutability": "mutable",
+                  "name": "vrfCoordinator",
+                  "nameLocation": "526:14:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 583,
+                  "src": "518:22:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 579,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "518:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "517:24:6"
+            },
+            "returnParameters": {
+              "id": 582,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "550:0:6"
+            },
+            "scope": 584,
+            "src": "494:57:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 585,
+        "src": "268:285:6",
+        "usedErrors": [],
+        "usedEvents": [
+          577
+        ]
+      }
+    ],
+    "src": "32:522:6"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.26+commit.8a97fa7a"
+  },
+  "contractName": "IVRFMigratableConsumerV2Plus",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "details": "This interface is designed to be used in VRFConsumerBaseV2Plus.",
+    "kind": "dev",
+    "methods": {
+      "setCoordinator(address)": {
+        "notice": "Sets the VRF Coordinator addressThis method should only be callable by the coordinator or contract owner"
+      }
+    },
+    "notice": "The IVRFMigratableConsumerV2Plus interface defines themethod required to be implemented by all V2Plus consumers.",
+    "version": 1
+  },
+  "offset": [
+    268,
+    553
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "494afb1ba126b238c29c860f1c46a9e362d2329b",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n/// @notice The IVRFMigratableConsumerV2Plus interface defines the\n/// @notice method required to be implemented by all V2Plus consumers.\n/// @dev This interface is designed to be used in VRFConsumerBaseV2Plus.\ninterface IVRFMigratableConsumerV2Plus {\n  event CoordinatorSet(address vrfCoordinator);\n\n  /// @notice Sets the VRF Coordinator address\n  /// @notice This method should only be callable by the coordinator or contract owner\n  function setCoordinator(address vrfCoordinator) external;\n}\n",
+  "sourceMap": "",
+  "sourcePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFMigratableConsumerV2Plus.sol",
+  "type": "interface"
+}

@@ -1,0 +1,587 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        }
+      ],
+      "name": "acceptSubscriptionOwnerTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "consumer",
+          "type": "address"
+        }
+      ],
+      "name": "addConsumer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "cancelSubscription",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "createSubscription",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        }
+      ],
+      "name": "fundSubscriptionWithNative",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "startIndex",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "maxCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getActiveSubscriptionIds",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getSubscription",
+      "outputs": [
+        {
+          "internalType": "uint96",
+          "name": "balance",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "nativeBalance",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint64",
+          "name": "reqCount",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address[]",
+          "name": "consumers",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        }
+      ],
+      "name": "pendingRequestExists",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "consumer",
+          "type": "address"
+        }
+      ],
+      "name": "removeConsumer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "keyHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "subId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint16",
+              "name": "requestConfirmations",
+              "type": "uint16"
+            },
+            {
+              "internalType": "uint32",
+              "name": "callbackGasLimit",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint32",
+              "name": "numWords",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "extraArgs",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct VRFV2PlusClient.RandomWordsRequest",
+          "name": "req",
+          "type": "tuple"
+        }
+      ],
+      "name": "requestRandomWords",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "subId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "requestSubscriptionOwnerTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "5": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.sol",
+    "7": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFSubscriptionV2Plus.sol"
+  },
+  "ast": {
+    "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.sol",
+    "exportedSymbols": {
+      "IVRFCoordinatorV2Plus": [
+        570
+      ],
+      "IVRFSubscriptionV2Plus": [
+        836
+      ],
+      "VRFV2PlusClient": [
+        531
+      ]
+    },
+    "id": 571,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 554,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:5"
+      },
+      {
+        "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/libraries/VRFV2PlusClient.sol",
+        "file": "../libraries/VRFV2PlusClient.sol",
+        "id": 556,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 571,
+        "sourceUnit": 532,
+        "src": "57:65:5",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 555,
+              "name": "VRFV2PlusClient",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 531,
+              "src": "65:15:5",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFSubscriptionV2Plus.sol",
+        "file": "./IVRFSubscriptionV2Plus.sol",
+        "id": 558,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 571,
+        "sourceUnit": 837,
+        "src": "123:68:5",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 557,
+              "name": "IVRFSubscriptionV2Plus",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 836,
+              "src": "131:22:5",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 559,
+              "name": "IVRFSubscriptionV2Plus",
+              "nameLocations": [
+                "398:22:5"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 836,
+              "src": "398:22:5"
+            },
+            "id": 560,
+            "nodeType": "InheritanceSpecifier",
+            "src": "398:22:5"
+          }
+        ],
+        "canonicalName": "IVRFCoordinatorV2Plus",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 570,
+        "linearizedBaseContracts": [
+          570,
+          836
+        ],
+        "name": "IVRFCoordinatorV2Plus",
+        "nameLocation": "373:21:5",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 561,
+              "nodeType": "StructuredDocumentation",
+              "src": "425:1588:5",
+              "text": " @notice Request a set of random words.\n @param req - a struct containing following fields for randomness request:\n keyHash - Corresponds to a particular oracle job which uses\n that key for generating the VRF proof. Different keyHash's have different gas price\n ceilings, so you can select a specific one to bound your maximum per request cost.\n subId  - The ID of the VRF subscription. Must be funded\n with the minimum subscription balance required for the selected keyHash.\n requestConfirmations - How many blocks you'd like the\n oracle to wait before responding to the request. See SECURITY CONSIDERATIONS\n for why you may want to request more. The acceptable range is\n [minimumRequestBlockConfirmations, 200].\n callbackGasLimit - How much gas you'd like to receive in your\n fulfillRandomWords callback. Note that gasleft() inside fulfillRandomWords\n may be slightly less than this amount because of gas used calling the function\n (argument decoding etc.), so you may need to request slightly more than you expect\n to have inside fulfillRandomWords. The acceptable range is\n [0, maxGasLimit]\n numWords - The number of uint256 random values you'd like to receive\n in your fulfillRandomWords callback. Note these numbers are expanded in a\n secure way by the VRFCoordinator from a single random value supplied by the oracle.\n extraArgs - abi-encoded extra args\n @return requestId - A unique identifier of the request. Can be used to match\n a request to a response in fulfillRandomWords."
+            },
+            "functionSelector": "9b1c385e",
+            "id": 569,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "requestRandomWords",
+            "nameLocation": "2025:18:5",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 565,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 564,
+                  "mutability": "mutable",
+                  "name": "req",
+                  "nameLocation": "2088:3:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 569,
+                  "src": "2044:47:5",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_RandomWordsRequest_$515_calldata_ptr",
+                    "typeString": "struct VRFV2PlusClient.RandomWordsRequest"
+                  },
+                  "typeName": {
+                    "id": 563,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 562,
+                      "name": "VRFV2PlusClient.RandomWordsRequest",
+                      "nameLocations": [
+                        "2044:15:5",
+                        "2060:18:5"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 515,
+                      "src": "2044:34:5"
+                    },
+                    "referencedDeclaration": 515,
+                    "src": "2044:34:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_RandomWordsRequest_$515_storage_ptr",
+                      "typeString": "struct VRFV2PlusClient.RandomWordsRequest"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2043:49:5"
+            },
+            "returnParameters": {
+              "id": 568,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 567,
+                  "mutability": "mutable",
+                  "name": "requestId",
+                  "nameLocation": "2119:9:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 569,
+                  "src": "2111:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 566,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2111:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2110:19:5"
+            },
+            "scope": 570,
+            "src": "2016:114:5",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 571,
+        "src": "363:1769:5",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "32:2101:5"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.26+commit.8a97fa7a"
+  },
+  "contractName": "IVRFCoordinatorV2Plus",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [
+    "smartcontractkit/chainlink@2.13.0/IVRFSubscriptionV2Plus"
+  ],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {
+      "acceptSubscriptionOwnerTransfer(uint256)": {
+        "details": "will revert if original owner of subId has not requested that msg.sender become the new owner.",
+        "notice": "Accept subscription owner transfer.",
+        "params": {
+          "subId": "- ID of the subscription"
+        }
+      },
+      "addConsumer(uint256,address)": {
+        "notice": "Add a consumer to a VRF subscription.",
+        "params": {
+          "consumer": "- New consumer which can use the subscription",
+          "subId": "- ID of the subscription"
+        }
+      },
+      "cancelSubscription(uint256,address)": {
+        "notice": "Cancel a subscription",
+        "params": {
+          "subId": "- ID of the subscription",
+          "to": "- Where to send the remaining LINK to"
+        }
+      },
+      "createSubscription()": {
+        "details": "You can manage the consumer set dynamically with addConsumer/removeConsumer.Note to fund the subscription with LINK, use transferAndCall. For exampleLINKTOKEN.transferAndCall(address(COORDINATOR),amount,abi.encode(subId));Note to fund the subscription with Native, use fundSubscriptionWithNative. Be sureto send Native with the call, for example:COORDINATOR.fundSubscriptionWithNative{value: amount}(subId);",
+        "notice": "Create a VRF subscription.",
+        "returns": {
+          "subId": "- A unique subscription id."
+        }
+      },
+      "fundSubscriptionWithNative(uint256)": {
+        "notice": "Fund a subscription with native.This method expects msg.value to be greater than or equal to 0.",
+        "params": {
+          "subId": "- ID of the subscription"
+        }
+      },
+      "getActiveSubscriptionIds(uint256,uint256)": {
+        "details": "the order of IDs in the list is **not guaranteed**, therefore, if making successive calls, oneshould consider keeping the blockheight constant to ensure a holistic picture of the contract state",
+        "notice": "Paginate through all active VRF subscriptions.",
+        "params": {
+          "maxCount": "maximum number of subscriptions to return, 0 to return all",
+          "startIndex": "index of the subscription to start from"
+        }
+      },
+      "getSubscription(uint256)": {
+        "notice": "Get a VRF subscription.",
+        "params": {
+          "subId": "- ID of the subscription"
+        },
+        "returns": {
+          "balance": "- LINK balance of the subscription in juels.",
+          "consumers": "- list of consumer address which are able to use this subscription.",
+          "nativeBalance": "- native balance of the subscription in wei.",
+          "owner": "- owner of the subscription.",
+          "reqCount": "- Requests count of subscription."
+        }
+      },
+      "removeConsumer(uint256,address)": {
+        "notice": "Remove a consumer from a VRF subscription.",
+        "params": {
+          "consumer": "- Consumer to remove from the subscription",
+          "subId": "- ID of the subscription"
+        }
+      },
+      "requestRandomWords((bytes32,uint256,uint16,uint32,uint32,bytes))": {
+        "notice": "Request a set of random words.",
+        "params": {
+          "req": "- a struct containing following fields for randomness request: keyHash - Corresponds to a particular oracle job which uses that key for generating the VRF proof. Different keyHash's have different gas price ceilings, so you can select a specific one to bound your maximum per request cost. subId  - The ID of the VRF subscription. Must be funded with the minimum subscription balance required for the selected keyHash. requestConfirmations - How many blocks you'd like the oracle to wait before responding to the request. See SECURITY CONSIDERATIONS for why you may want to request more. The acceptable range is [minimumRequestBlockConfirmations, 200]. callbackGasLimit - How much gas you'd like to receive in your fulfillRandomWords callback. Note that gasleft() inside fulfillRandomWords may be slightly less than this amount because of gas used calling the function (argument decoding etc.), so you may need to request slightly more than you expect to have inside fulfillRandomWords. The acceptable range is [0, maxGasLimit] numWords - The number of uint256 random values you'd like to receive in your fulfillRandomWords callback. Note these numbers are expanded in a secure way by the VRFCoordinator from a single random value supplied by the oracle. extraArgs - abi-encoded extra args"
+        },
+        "returns": {
+          "requestId": "- A unique identifier of the request. Can be used to match a request to a response in fulfillRandomWords."
+        }
+      },
+      "requestSubscriptionOwnerTransfer(uint256,address)": {
+        "notice": "Request subscription owner transfer.",
+        "params": {
+          "newOwner": "- proposed new owner of the subscription",
+          "subId": "- ID of the subscription"
+        }
+      }
+    },
+    "version": 1
+  },
+  "offset": [
+    363,
+    2132
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "20621235f36b63a922a73cfe6d7fb9e516bc5e94",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport {VRFV2PlusClient} from \"../libraries/VRFV2PlusClient.sol\";\nimport {IVRFSubscriptionV2Plus} from \"./IVRFSubscriptionV2Plus.sol\";\n\n// Interface that enables consumers of VRFCoordinatorV2Plus to be future-proof for upgrades\n// This interface is supported by subsequent versions of VRFCoordinatorV2Plus\ninterface IVRFCoordinatorV2Plus is IVRFSubscriptionV2Plus {\n  /**\n   * @notice Request a set of random words.\n   * @param req - a struct containing following fields for randomness request:\n   * keyHash - Corresponds to a particular oracle job which uses\n   * that key for generating the VRF proof. Different keyHash's have different gas price\n   * ceilings, so you can select a specific one to bound your maximum per request cost.\n   * subId  - The ID of the VRF subscription. Must be funded\n   * with the minimum subscription balance required for the selected keyHash.\n   * requestConfirmations - How many blocks you'd like the\n   * oracle to wait before responding to the request. See SECURITY CONSIDERATIONS\n   * for why you may want to request more. The acceptable range is\n   * [minimumRequestBlockConfirmations, 200].\n   * callbackGasLimit - How much gas you'd like to receive in your\n   * fulfillRandomWords callback. Note that gasleft() inside fulfillRandomWords\n   * may be slightly less than this amount because of gas used calling the function\n   * (argument decoding etc.), so you may need to request slightly more than you expect\n   * to have inside fulfillRandomWords. The acceptable range is\n   * [0, maxGasLimit]\n   * numWords - The number of uint256 random values you'd like to receive\n   * in your fulfillRandomWords callback. Note these numbers are expanded in a\n   * secure way by the VRFCoordinator from a single random value supplied by the oracle.\n   * extraArgs - abi-encoded extra args\n   * @return requestId - A unique identifier of the request. Can be used to match\n   * a request to a response in fulfillRandomWords.\n   */\n  function requestRandomWords(VRFV2PlusClient.RandomWordsRequest calldata req) external returns (uint256 requestId);\n}\n",
+  "sourceMap": "",
+  "sourcePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/vrf/dev/interfaces/IVRFCoordinatorV2Plus.sol",
+  "type": "interface"
+}
