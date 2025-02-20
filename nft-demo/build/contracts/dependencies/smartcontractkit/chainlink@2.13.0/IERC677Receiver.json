@@ -1,0 +1,224 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onTokenTransfer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "2": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/IERC677Receiver.sol"
+  },
+  "ast": {
+    "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/IERC677Receiver.sol",
+    "exportedSymbols": {
+      "IERC677Receiver": [
+        1112
+      ]
+    },
+    "id": 1113,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1102,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".6",
+          "<=",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:2"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IERC677Receiver",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1112,
+        "linearizedBaseContracts": [
+          1112
+        ],
+        "name": "IERC677Receiver",
+        "nameLocation": "76:15:2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a4c0ed36",
+            "id": 1111,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onTokenTransfer",
+            "nameLocation": "105:15:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1109,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1104,
+                  "mutability": "mutable",
+                  "name": "sender",
+                  "nameLocation": "129:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1111,
+                  "src": "121:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1103,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "121:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1106,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "145:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1111,
+                  "src": "137:14:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1105,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "137:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1108,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "168:4:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1111,
+                  "src": "153:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 1107,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "153:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "120:53:2"
+            },
+            "returnParameters": {
+              "id": 1110,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "182:0:2"
+            },
+            "scope": 1112,
+            "src": "96:87:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1113,
+        "src": "66:119:2",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "32:154:2"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.26+commit.8a97fa7a"
+  },
+  "contractName": "IERC677Receiver",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    66,
+    185
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "7f69fb60bef0aabf109f6a441316b1913bb59443",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.6.6 <=0.9.0;\n\ninterface IERC677Receiver {\n  function onTokenTransfer(address sender, uint256 amount, bytes calldata data) external;\n}\n",
+  "sourceMap": "",
+  "sourcePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/IERC677Receiver.sol",
+  "type": "interface"
+}

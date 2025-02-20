@@ -1,0 +1,422 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "int256",
+          "name": "current",
+          "type": "int256"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "AnswerUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "startedBy",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "startedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "NewRound",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "description",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint80",
+          "name": "_roundId",
+          "type": "uint80"
+        }
+      ],
+      "name": "getRoundData",
+      "outputs": [
+        {
+          "internalType": "uint80",
+          "name": "roundId",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "answer",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint80",
+          "name": "answeredInRound",
+          "type": "uint80"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestRound",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestRoundData",
+      "outputs": [
+        {
+          "internalType": "uint80",
+          "name": "roundId",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "answer",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint80",
+          "name": "answeredInRound",
+          "type": "uint80"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "2": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/AggregatorInterface.sol",
+    "3": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/AggregatorV2V3Interface.sol",
+    "4": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol"
+  },
+  "ast": {
+    "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/AggregatorV2V3Interface.sol",
+    "exportedSymbols": {
+      "AggregatorInterface": [
+        1552
+      ],
+      "AggregatorV2V3Interface": [
+        1329
+      ],
+      "AggregatorV3Interface": [
+        1598
+      ]
+    },
+    "id": 1330,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1320,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:3"
+      },
+      {
+        "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/AggregatorInterface.sol",
+        "file": "./AggregatorInterface.sol",
+        "id": 1322,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 1330,
+        "sourceUnit": 1553,
+        "src": "57:62:3",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1321,
+              "name": "AggregatorInterface",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1552,
+              "src": "65:19:3",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol",
+        "file": "./AggregatorV3Interface.sol",
+        "id": 1324,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 1330,
+        "sourceUnit": 1599,
+        "src": "120:66:3",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1323,
+              "name": "AggregatorV3Interface",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1598,
+              "src": "128:21:3",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 1325,
+              "name": "AggregatorInterface",
+              "nameLocations": [
+                "278:19:3"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1552,
+              "src": "278:19:3"
+            },
+            "id": 1326,
+            "nodeType": "InheritanceSpecifier",
+            "src": "278:19:3"
+          },
+          {
+            "baseName": {
+              "id": 1327,
+              "name": "AggregatorV3Interface",
+              "nameLocations": [
+                "299:21:3"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1598,
+              "src": "299:21:3"
+            },
+            "id": 1328,
+            "nodeType": "InheritanceSpecifier",
+            "src": "299:21:3"
+          }
+        ],
+        "canonicalName": "AggregatorV2V3Interface",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1329,
+        "linearizedBaseContracts": [
+          1329,
+          1598,
+          1552
+        ],
+        "name": "AggregatorV2V3Interface",
+        "nameLocation": "251:23:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1330,
+        "src": "241:82:3",
+        "usedErrors": [],
+        "usedEvents": [
+          1543,
+          1551
+        ]
+      }
+    ],
+    "src": "32:292:3"
+  },
+  "bytecode": "",
+  "bytecodeSha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.26+commit.8a97fa7a"
+  },
+  "contractName": "AggregatorV2V3Interface",
+  "coverageMap": {
+    "branches": {},
+    "statements": {}
+  },
+  "dependencies": [
+    "smartcontractkit/chainlink@2.13.0/AggregatorInterface",
+    "smartcontractkit/chainlink@2.13.0/AggregatorV3Interface"
+  ],
+  "deployedBytecode": "",
+  "deployedSourceMap": "",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    241,
+    323
+  ],
+  "opcodes": "",
+  "pcMap": {},
+  "sha1": "90d9c8b834d609b631c7c34f42b1b6c9b7df6f8f",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport {AggregatorInterface} from \"./AggregatorInterface.sol\";\nimport {AggregatorV3Interface} from \"./AggregatorV3Interface.sol\";\n\n// solhint-disable-next-line interface-starts-with-i\ninterface AggregatorV2V3Interface is AggregatorInterface, AggregatorV3Interface {}\n",
+  "sourceMap": "",
+  "sourcePath": "C:/Users/ashut/.brownie/packages/smartcontractkit/chainlink@2.13.0/contracts/src/v0.8/shared/interfaces/AggregatorV2V3Interface.sol",
+  "type": "interface"
+}
